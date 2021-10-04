@@ -1,5 +1,5 @@
 {
-  "name": "lmksystem-custom-input",
+  "name": "@atrash.ala/lmksystems-custom-input",
   "version": "1.0.0",
   "description": "A React Native SelectInput for iOS and Android, which uses a keyboard with a Picker component",
   "author": "ATRASH thanks based on Markus Wind work",
@@ -52,5 +52,8 @@
     "react": "16.5.0",
     "react-native": "0.57.2",
     "react-test-renderer": "*"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
