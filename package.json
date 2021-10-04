@@ -1,5 +1,5 @@
 {
-  "name": "@atrash.ala/lmksystems-custom-input",
+  "name": "@atrash.ala/lmksystems-input",
   "version": "1.0.0",
   "description": "A React Native SelectInput for iOS and Android, which uses a keyboard with a Picker component",
   "author": "ATRASH thanks based on Markus Wind work",
