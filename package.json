@@ -1,16 +1,13 @@
 {
-  "name": "react-native-select-input-ios-lmk",
+  "name": "lmksystem-custom-input",
   "version": "1.0.0",
   "description": "A React Native SelectInput for iOS and Android, which uses a keyboard with a Picker component",
-  "author": "Markus Wind",
+  "author": "ATRASH thanks based on Markus Wind work",
   "license": "MIT",
-  "homepage": "https://github.com/markuswind/react-native-select-input-ios#readme",
-  "bugs": {
-    "url": "https://github.com/markuswind/react-native-select-input-ios/issues"
-  },
+  "homepage": "https://github.com/AlaAtrash/react-native-select-input-ios.git",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/markuswind/react-native-select-input-ios.git"
+    "url": "git@github.com:AlaAtrash/react-native-select-input-ios.git"
   },
   "keywords": [
     "ReactNative",
@@ -55,5 +52,8 @@
     "react": "16.5.0",
     "react-native": "0.57.2",
     "react-test-renderer": "*"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
