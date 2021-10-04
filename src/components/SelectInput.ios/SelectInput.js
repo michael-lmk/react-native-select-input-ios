@@ -1,5 +1,6 @@
 import React from 'react'
 import { Text, TouchableWithoutFeedback, View } from 'react-native'
+import BibleSvg from '../../../../../components/Icons_svg/BibleSvg'
 
 import AbstractSelectInput from '../AbstractSelectInput'
 import PickerKeyboard from '../PickerKeyboard'
@@ -43,12 +44,13 @@ class SelectInput extends AbstractSelectInput {
       style,
       submitKeyText,
       cancelKeyText,
-      value
+      value,
+      titleModal
     } = this.props
 
     return (
       <TouchableWithoutFeedback onPress={this.focus}>
-        <View style={style}>
+        <View style={[style,{alignItems:'center'}]}>
           <Text
             style={labelStyle || styles.defaultlabelstyle}
             adjustFontSizeToFit={true}
@@ -67,11 +69,15 @@ class SelectInput extends AbstractSelectInput {
             onValueChange={this.onValueChange}
             submitKeyText={submitKeyText}
             cancelKeyText={cancelKeyText}
+            titleModal={titleModal}
             buttonsTextStyle={buttonsTextStyle}
             buttonsViewStyle={buttonsViewStyle}
             pickerItemStyle={pickerItemStyle}
             pickerViewStyle={pickerViewStyle}
           />
+          <View style={{width:15,height:15}}>
+            <BibleSvg type={'arrowdown'} color={'black'} />
+          </View>
         </View>
       </TouchableWithoutFeedback>
     )

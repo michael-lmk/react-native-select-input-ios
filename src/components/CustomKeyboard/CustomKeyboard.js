@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Dimensions, Modal, TouchableWithoutFeedback, View } from 'react-native'
+import { Dimensions, Modal, TouchableWithoutFeedback, View,Text ,useWindowDimensions} from 'react-native'
 
 import KeyboardButton from '../KeyboardButton'
 
@@ -7,9 +7,12 @@ import propTypes from './types.js'
 import styles from './styles.js'
 
 class CustomKeyboard extends Component {
+  
   state = {
-    width: Dimensions.get('window').width
+    width: Dimensions.get('window').width,
+  
   }
+  
 
   updateDimensions = () => {
     this.setState({
@@ -35,12 +38,14 @@ class CustomKeyboard extends Component {
       visible,
       cancelKeyText,
       submitKeyText,
-      children
+      children,
+      titleModal
     } = this.props
 
     return (
+    
       <Modal
-        animationType={'slide'}
+        animationType={'fade'}
         transparent={true}
         visible={visible}
         onOrientationChange={this.updateDimensions}
@@ -53,15 +58,15 @@ class CustomKeyboard extends Component {
       >
         <TouchableWithoutFeedback>
           <View style={styles.container}>
-            <View style={[styles.modal, { width }]}>
-              <View style={[styles.buttonview, buttonsViewStyle, { width }]}>
+            <View style={[styles.modal,{width:width>600?500:"95%"}]}>
+              <View style={[styles.buttonview, buttonsViewStyle]}>
                 <KeyboardButton
                   onPress={this.onCancelPress}
                   text={cancelKeyText}
                   textAlign={'left'}
                   textStyle={buttonsTextStyle}
                 />
-
+              <Text style={{alignSelf:"center",fontSize:18,fontWeight:'600'}}>{titleModal}</Text>
                 <KeyboardButton
                   onPress={this.onSubmitPress}
                   text={submitKeyText}
@@ -75,6 +80,7 @@ class CustomKeyboard extends Component {
           </View>
         </TouchableWithoutFeedback>
       </Modal>
+    
     )
   }
 }

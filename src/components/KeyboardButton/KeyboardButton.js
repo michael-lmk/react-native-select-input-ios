@@ -12,7 +12,7 @@ class KeyboardButton extends Component {
       <TouchableOpacity onPress={onPress}>
         <Text
           allowFontScaling={false}
-          style={[styles.buttontext, textStyle, { textAlign: textAlign }]}
+          style={[styles.buttontext, textStyle, { textAlign: textAlign,fontWeight:text=='OK'?'600':'normal' }]}
         >
           {text}
         </Text>

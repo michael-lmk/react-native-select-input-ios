@@ -90,6 +90,7 @@ class PickerKeyboard extends Component {
       pickerViewStyle,
       cancelKeyText,
       submitKeyText,
+      titleModal,
       options
     } = this.props
 
@@ -102,12 +103,13 @@ class PickerKeyboard extends Component {
         onSubmitPress={this.onSubmitPress}
         submitKeyText={submitKeyText}
         visible={visible}
+        titleModal={titleModal}
       >
         <Picker
           ref={this.setPickerRef}
           onValueChange={this.onValueChange}
           selectedValue={value}
-          style={[styles.pickerview, pickerViewStyle, { width }]}
+          style={[styles.pickerview, pickerViewStyle]}
           itemStyle={pickerItemStyle}
         >
           {options.map(option => (

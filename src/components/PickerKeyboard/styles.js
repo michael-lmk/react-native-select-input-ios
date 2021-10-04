@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end'
   },
   pickerview: {
-    backgroundColor: '#FFFFFF'
+    backgroundColor: 'white',
   }
 })
 

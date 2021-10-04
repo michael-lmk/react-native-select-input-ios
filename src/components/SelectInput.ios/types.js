@@ -7,6 +7,7 @@ export default {
   ...selectInputPropTypes,
   cancelKeyText: PropTypes.string,
   submitKeyText: PropTypes.string,
+  titleModal : PropTypes.string,
   buttonsTextStyle: PropTypes.oneOfType([
     Text.propTypes.style,
     PropTypes.arrayOf(Text.propTypes.style)
