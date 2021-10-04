@@ -7,9 +7,9 @@
 Installation can be done through `npm` or `yarn`:
 
 ```bash
-npm install lmksystems-custom-input --save
+npm install lmksystems-input --save
 # or
-yarn add lmksystems-custom-input
+yarn add lmksystems-input
 ```
 ### Usage
 
@@ -18,7 +18,7 @@ Import the `SelectInput` and wrap you content inside of it.
 ```js
 import React from 'react'
 import { View } from 'react-native'
-import SelectInput from 'lmksystems-custom-input'
+import SelectInput from 'lmksystems-input'
 
 class Component extends React.Component {
   render() {
