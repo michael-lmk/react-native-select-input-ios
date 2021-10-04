@@ -7,9 +7,9 @@
 Installation can be done through `npm` or `yarn`:
 
 ```bash
-npm install lmksystems-input --save
+npm install @atrash.ala/lmksystems-input
 # or
-yarn add lmksystems-input
+npm install @atrash.ala/lmksystems-input --force
 ```
 ### Usage
 
