@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text, TouchableWithoutFeedback, View } from 'react-native'
-import BibleSvg from '../../../../../components/Icons_svg/BibleSvg'
+import BibleSvg from '../SVG/BibleSvg'
 
 import AbstractSelectInput from '../AbstractSelectInput'
 import PickerKeyboard from '../PickerKeyboard'
