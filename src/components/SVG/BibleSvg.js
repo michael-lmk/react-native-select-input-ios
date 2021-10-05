@@ -2,6 +2,7 @@ import React from "react";
 import { SvgXml } from "react-native-svg";
 
 const BibleSvg = ({ type, color }) => {
+  if (type) {
     if (type == "arrowdown") {
         var xml = `<svg xmlns="http://www.w3.org/2000/svg" width="15.324" height="9.443" viewBox="0 0 15.324 9.443">
         <g id="Composant_87_1" data-name="Composant 87 – 1" transform="translate(0.731 0.696)">
@@ -10,6 +11,9 @@ const BibleSvg = ({ type, color }) => {
       </svg>
       `;
       }
-
+      return <SvgXml xml={xml} width="100%" height="100%" />;
+  }else{
+      return null
+  }
 }
 export default BibleSvg;
