@@ -58,15 +58,15 @@ class CustomKeyboard extends Component {
       >
         <TouchableWithoutFeedback>
           <View style={styles.container}>
-            <View style={[styles.modal,{width:width>600?500:"95%"}]}>
-              <View style={[styles.buttonview, buttonsViewStyle]}>
+            <View style={[styles.modal,{width:width>600?500:"90%"}]}>
+              <View style={[styles.buttonview, buttonsViewStyle,{flexDirection:'row',alignItems:"center"}]}>
                 <KeyboardButton
                   onPress={this.onCancelPress}
                   text={cancelKeyText}
                   textAlign={'left'}
                   textStyle={buttonsTextStyle}
                 />
-              <Text style={{alignSelf:"center",fontSize:18,fontWeight:'600'}}>{titleModal}</Text>
+              <Text style={{fontSize:18,fontWeight:'600',width:'50%',textAlign:"center"}}>{titleModal}</Text>
                 <KeyboardButton
                   onPress={this.onSubmitPress}
                   text={submitKeyText}

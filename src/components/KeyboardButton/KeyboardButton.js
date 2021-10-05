@@ -9,10 +9,10 @@ class KeyboardButton extends Component {
     const { onPress, text, textAlign, textStyle } = this.props
 
     return (
-      <TouchableOpacity onPress={onPress}>
+      <TouchableOpacity style={{width:"25%"}} onPress={onPress}>
         <Text
           allowFontScaling={false}
-          style={[styles.buttontext, textStyle, { textAlign: textAlign,fontWeight:text=='OK'?'600':'normal' }]}
+          style={[styles.buttontext, textStyle, { textAlign: textAlign,fontWeight:text=='OK'?'600':'normal' ,width:"100%"}]}
         >
           {text}
         </Text>
