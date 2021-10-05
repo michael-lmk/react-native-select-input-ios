@@ -1,6 +1,6 @@
 {
   "name": "@atrash.ala/lmksystems-input",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React Native SelectInput for iOS and Android, which uses a keyboard with a Picker component",
   "author": "ATRASH thanks based on Markus Wind work",
   "license": "MIT",
@@ -53,12 +53,10 @@
     "react-native": "0.57.2",
     "react-test-renderer": "*"
   },
-<<<<<<< HEAD
   "dependencies": {
     "react-native-svg": "^12.1.1"
-=======
+  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
->>>>>>> daba29a47c981630659d57c8238291187e93a15e
   }
 }
