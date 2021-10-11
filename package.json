@@ -1,13 +1,13 @@
 {
   "name": "lmksystems-select-input",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "description": "A React Native SelectInput for iOS and Android, which uses a keyboard with a Picker component",
-  "author": "ATRASH thanks based on Markus Wind work",
+  "author": "LMK systeme based on Markus Wind work",
   "license": "MIT",
-  "homepage": "https://github.com/AlaAtrash/react-native-select-input-ios.git",
+  "homepage": "https://github.com/michael-lmk/react-native-select-input-ios.git",
   "repository": {
     "type": "git",
-    "url": "git@github.com:AlaAtrash/react-native-select-input-ios.git"
+    "url": "git@github.com:michael-lmk/react-native-select-input-ios.git"
   },
   "keywords": [
     "ReactNative",
